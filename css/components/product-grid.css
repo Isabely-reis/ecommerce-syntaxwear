@@ -1,11 +1,11 @@
 /* product-grid.css */
 
 .card {
-	background-position: center;/*Define onde a imagem de fundo será posicionada dentro do elemento.*/
-	background-size: cover;/*A imagem sempre cobre todo o card, mesmo que precise cortar um pedaço.*/
-	background-repeat: no-repeat;/*Não repita a imagem*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
     position: relative;
-    border-radius: 20px;/*Arredonda os cantos.*/
+    border-radius: 20px;
 }
 
 .highlight {
@@ -68,4 +68,32 @@
 .cta-group{
     display: flex;
     gap: 10px;
+}
+
+
+@media (max-width:768px) {
+	.grid-section{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: 
+		"highlight highlight"
+		"sneaker-white sneaker-white"
+		"model sneaker-color"
+		"model sneaker-silver"
+		"sneaker-purple sneaker-purple";
+		max-width: 100%;
+		gap: 0.625rem;
+	}
+
+	.highlight{
+		min-height: 500px;
+	}
+
+	.model{
+		min-height: 370px;
+	}
+
+	.sneaker-white, .sneaker-purple{
+		min-height: 190px;
+	}
 }
