@@ -10,7 +10,7 @@
 
 .category-card {
 	position: relative;
-	width: 317px;
+	width: 280px;
 	height: 500px;
 	border-radius: 15px;
 	overflow: hidden;
@@ -46,7 +46,7 @@
 	background: url(../../images/products/moderno.jpg) no-repeat center;
 	background-size: cover;
 }
-
+	
 .futurista {
 	background: url(../../images/products/futurista.jpg) no-repeat center;
 	background-size: cover;
