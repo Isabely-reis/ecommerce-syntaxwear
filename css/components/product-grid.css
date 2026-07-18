@@ -1,11 +1,11 @@
 /* product-grid.css */
 
 .card {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-position: center;/*Define onde a imagem de fundo será posicionada dentro do elemento.*/
+	background-size: cover;/*A imagem sempre cobre todo o card, mesmo que precise cortar um pedaço.*/
+	background-repeat: no-repeat;/*Não repita a imagem*/
     position: relative;
-    border-radius: 20px;
+    border-radius: 20px;/*Arredonda os cantos.*/
 }
 
 .highlight {
